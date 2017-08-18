@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    width: 6.25in;
+    height: 4.5in;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  #safe-area {
+    position: absolute;
+    width: 5.875in;
+    height: 3.875in;
+    left: 0.1875in;
+    top: 0.1875in;
+  }
+  #present {
+    background-image: url("https://dmprint.s3.amazonaws.com/resources/template/html/birthday/present.jpg");
+    background-size: 6.25in 1.5in;
+    width:6.25in;
+    height:1.5in;
+  }
+  #message-to-customer {
+    position: absolute;
+    width: 2.0in;
+    height: 2in;
+    top: 1.4in;
+    left: .25in;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.12in;
+  }
+</style>
+</head>
+<body>
+  <div id="present">
+  </div>
+  <div id="safe-area">
+    <div id="message-to-customer">
+      {{FirstName}},
+      <br/><br/>
+      All of us here at ACME Mortgage company wanted to take the time to wish you a Happy Birthday! We know that this is going to be the best year yet!
+      <br/><br/>
+      If there is anything we can do to make your day better please don't hesitate to give me a call at {{PhoneNumber}}
+      <br/><br/>
+      Thanks again,
+      <br/><br/>
+      {{SenderFirstName}}
+    </div>
+  </div>
+</body>
+</html>
