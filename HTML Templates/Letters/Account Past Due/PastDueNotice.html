@@ -1,0 +1,67 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+        *, *:before, *:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        width: 8.5in; /* We need to set the document size to either 8.5x11 or 8.5x14 */
+        height: 11in; /* We need to set the document size to either 8.5x11 or 8.5x14 */
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans';
+      }
+      .sig img{
+        width:250px;
+        height:80px;
+      }
+      .wrapper {
+        position: absolute;
+        top: 3.45in;
+      }
+      .page-content {
+        position: relative;
+        width: 7in;
+        height: 10.625in;
+        left: 0.75in;
+        top: 0.1875in;
+      }
+      .logo {
+        position: absolute;
+        right: 0;
+        top: 45px;
+        width:165px;
+        height:50px;
+      }
+      .logosmall {
+        position: absolute;
+        left: 1.6in;
+        top: .72in;
+        width:65px;
+        height:40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-content">
+       <img class="logosmall" src="https://s3-us-west-2.amazonaws.com/dmprint/resources/template/html/pastdue/logo.png"/>
+        <img class="logo" src="https://s3-us-west-2.amazonaws.com/dmprint/resources/template/html/pastdue/logo_l.png"/>
+        <div class='wrapper'>
+          <p>Dear {{FirstName}},</p>
+          <p>We noticed that your account with us appears as past due. Our accounting department shows that you have
+          a total outstanding balance of <b>${{AmmountDue}}</b>.</p>
+          <p>Urna accumsan rhoncus in quis et. Nec est ut quis vestibulum et pellentesque, sed amet velit sollicitudin dui, felis wisi pellentesque erat. Aenean elit elit, laoreet amet vel in feugiat, arcu iaculis diam montes aenean, ipsum aliquam magni sit neque qui platea, velit diam enim duis lorem donec. Vestibulum ligula faucibus platea et, arcu cras nullam sit sed neque. Ligula nibh lectus et etiam, pede urna vestibulum, dis blandit ut erat, accumsan etiam massa eu.</p><p>Habitasse rhoncus diam donec etiam odio dolor, habitasse fermentum mauris cras, lacus placerat lorem, praesent id lectus turpis praesent urna non. Odio in lorem phasellus eget mauris, felis elementum amet nec dolor, vitae sit nec quis ut eu, nunc maecenas sed praesent sodales, vel vivamus. Ante adipiscing, faucibus enim ipsum dolor ut, id rutrum pellentesque ante elit etiam, diam tellus est et ut elit, quis et ullam.</p>
+          <p>Thank you very much for your attention to this matter.</p>
+          </br></br></br>
+          <p>Sincerely,</p>
+          <div class="sig"><img src="https://s3-us-west-2.amazonaws.com/dmprint/resources/template/html/pastdue/SeanSig.jpg"></div>
+          <p>Sean O'Gorman</br>Some Title</br>DirectMailers</p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
