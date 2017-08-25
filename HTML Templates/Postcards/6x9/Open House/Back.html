@@ -1,0 +1,51 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    width: 9.25in;
+    height: 6.25in;
+    margin: 0;
+    padding: 0;
+  }
+  #outer-wrapper {
+    width: 9.25in;
+    height: 6.25in;
+    background-image: url("https://dmprint.s3.amazonaws.com/resources/template/html/homesale/bighouse.jpg");
+    background-size: 9.25in 6.25in;
+  }
+  #print-area {
+    position: absolute;
+    width: 9in;
+    height: 6in;
+    left: 0.125in;
+    top: 0.125in;
+    padding: .4in .5in .5in .5in;
+    text-align: left;
+    font-family: 'Taviraj', serif;
+    line-height:.5in;
+    color: #fff;
+  }
+  .text-hedding{
+  	font-size: .6in;
+  	font-weight: 600;
+  }
+  .text-address{
+  	font-size: .4in;
+  }
+</style>
+</head>
+<body>
+  <div id="outer-wrapper">
+  </div>
+  <div id="print-area">
+    <span class="text-hedding">Just Listed!</span><br/><span class="text-address">{{OpenHouseAddress}}</span>
+  </div>
+</body>
+</html>

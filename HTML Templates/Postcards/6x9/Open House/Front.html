@@ -1,0 +1,66 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Taviraj|Quicksand" rel="stylesheet">
+<style>
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body {
+    width: 9.25in;
+    height: 6.25in;
+    margin: 0;
+    padding: 0;
+  }
+  #outer-wrapper {
+    width: 9.25in;
+    height: 6.25in;
+    background-image: url("https://dmprint.s3.amazonaws.com/resources/template/html/homesale/inside.jpg");
+    background-size: 9.25in 6.25in;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+  }
+  #print-area {
+    position: absolute;
+    width: 9in;
+    height: 6in;
+    left: 0.125in;
+    top: 0.125in;
+    padding: .4in .5in .5in .5in;
+    text-align: left;
+    font-family: 'Taviraj', serif;
+    color: #333;
+  }
+  .text-hedding{
+  	font-size: .6in;
+  	font-weight: 600;
+    line-height:.5in;
+  }
+  .text-headline{
+  	font-size: .4in;
+    line-height:.5in;
+  }
+  #message-to-customer {
+    width: 4.5in;
+    top:2.5in;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 0.18in;
+  }
+</style>
+</head>
+<body>
+  <div id="outer-wrapper">
+  </div>
+  <div id="print-area">
+    <span class="text-headline">Over {{HomeSq}} Sq Ft!<br/>With {{Bedrooms}} Bedrooms, and {{Bathrooms}} Bathrooms.</span>
+    <div id="message-to-customer">Lorem ipsum dolor sit amet, per sale volumus ei, ea mazim iriure oblique usu. Duo fastidii facilisi ex. Maiorum efficiendi conclusionemque ius et. Quo quis mazim in, erant persius pri at. Sit posse dicit eu.<br/><br/>
+
+No vis minim epicuri imperdiet, te sed iudico homero tempor. Eu facete eruditi intellegat quo, clita prompta at eum, ut vim illum primis antiopam. Pertinax complectitur reprehendunt pri ea, cu quando iisque nominavi per, simul iudico iuvaret cum ei. Te soluta denique duo. Cu argumentum cotidieque nec, ex quem malorum reformidans eam.<br/><br/>Give ACME Homes a call today!<br/>(800) 555-1212</div>
+  </div>
+</body>
+</html>

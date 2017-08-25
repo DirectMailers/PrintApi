@@ -17,35 +17,33 @@
   #outer-wrapper {
     width: 6.25in;
     height: 4.5in;
-    background-color: #a2d1f8;
     background-image: url("https://dmprint.s3.amazonaws.com/resources/template/html/birthday/bigpresent.jpg");
-    background-size: 6.25in 4.25in;
+    background-size: 6.25in 4.5in;
     -webkit-filter: blur(3px);
     -moz-filter: blur(3px);
     -o-filter: blur(3px);
     -ms-filter: blur(3px);
     filter: blur(3px);
   }
-  #print-safe-area {
+  #text-area {
     position: absolute;
     width: 5.875in;
     height: 3.875in;
     left: 0.1875in;
-    top: 0.1875in;
-    padding: .1in .1in .1in .1in;
+    top: 0.25in;
+    padding: .8in .1in .1in .1in;
     text-align: center;
     font-family: 'Allura', cursive;
     font-size: .8in;
     color: #fff;
-    padding-top: .8in;
   }
 </style>
 </head>
 <body>
   <div id="outer-wrapper">
   </div>
-  <div id="print-safe-area">
-    Happy Birthday {{FirstName}}
+  <div id="text-area">
+    Happy Birthday<br/>{{FirstName}}
   </div>
 </body>
 </html>
